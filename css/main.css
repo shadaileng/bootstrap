@@ -1,0 +1,66 @@
+/**********通用样式************/
+
+@font-face {
+  font-family: dl;
+  src: url('../fonts/icomoon.eot') format('embedded-opentype'),
+       url('../fonts/icomoon.svg') format('svg'),
+       url('../fonts/icomoon.ttf') format('truetype'),
+       url('../fonts/icomoon.woff') format('woff')
+}
+
+[class^='dl_icon-'],[class*='dl_icon-'] {
+  font-family: dl;
+  font-style: normal;
+}
+.dl_icon-phone::before {
+  content: '\e958';
+  font-size: 13px;
+}
+.dl_icon-tel::before {
+  content: '\e942';
+  font-size: 13px;
+}
+/**********头部样式************/
+#dl_header {}
+#dl_header .top_bar {
+  height: 40px;
+  line-height: 39px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+#dl_header .top_bar a {
+  color: #777;
+}
+#dl_header .top_bar .container .row>div + div {
+  border-left: 1px solid #e0e0e0
+}
+
+#dl_header .top_bar .top_bar_1 img {
+  width: 100%;
+  display: none;
+  position: absolute;
+  margin-top: -10px;
+}
+#dl_header .top_bar .top_bar_1 a:hover img {
+  display: block;
+}
+#dl_header .dl_navbar {
+  background-color: #fff;
+}
+#dl_header .dl_navbar .navbar-brand {
+  height: 70px;
+  padding: 25px 10px;
+}
+#dl_header .dl_navbar .navbar-nav a {
+  height: 70px;
+  line-height: 40px;
+}
+
+#dl_header .dl_navbar .navbar-nav li.active a,
+#dl_header .dl_navbar .navbar-nav a:hover {
+  border-bottom: 2px solid #54c8f1;
+  background-color: transparent;
+}
+#dl_header .dl_navbar .navbar-toggle{
+  margin-top: 15px;
+}
