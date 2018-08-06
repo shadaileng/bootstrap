@@ -11,7 +11,6 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!-- 定制 -->
     <link href="css/main.css" rel="stylesheet">
-    <script src="js/main.js"></script>
     <!-- 站点图标 -->
     <link rel="shortcut icon" href="imgs/main.ico" type="image/x-icon">
     
@@ -81,41 +80,107 @@
       </nav>
     </header>
     <section>
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div id="dl_carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#dl_carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#dl_carousel" data-slide-to="1"></li>
+        <li data-target="#dl_carousel" data-slide-to="2"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="imgs/ziran1.jpg" alt="...">
+        <div class="item active" data-src="imgs/ziran1.jpg">
+          <img src="imgs/ziran1.jpg" alt="ziran1">
         </div>
-        <div class="item">
-          <img src="imgs/ziran2.jpg" alt="...">
+        <div class="item" data-src="imgs/ziran2.jpg">
+          <img src="imgs/ziran2.jpg" alt="ziran2">
         </div>
         
-        <div class="item">
-          <img src="imgs/ziran3.jpg" alt="...">
+        <div class="item" data-src="imgs/ziran3.jpg">
+          <img src="imgs/ziran3.jpg" alt="ziran3">
         </div>
       </div>
 
       <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <a class="left carousel-control" href="#dl_carousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <a class="right carousel-control" href="#dl_carousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
     </div>
     </section>
-    <section id="dl_about">关于我们</section>
-    <section id="dl_product">产品特色</section>
+    <section id="dl_about" class="hidden-xs hidden-sm">
+      <div class="title">
+        <h1 class="text-center">关于我们</h1>
+        <div class="text-center title_star">
+          <span class="glyphicon glyphicon-star span_sm"></span>
+          <span class="glyphicon glyphicon-star span_md"></span>
+          <span class="glyphicon glyphicon-star span_sm"></span>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 text-muted dl_about_desc">
+              <p>人生中出现的一切，都无法拥有，只能经历。深知这一点的人，就会懂得：</p>
+              <p>无所谓失去，而只是经过而已；</p>
+              <p>亦无所谓失败，而只是经验而已。</p>
+              <p>用一颗浏览的心，去看待人生，一切的得与失、隐与显，都是风景与风情。</p>
+              <p> —— 扎西拉姆多多 《喃喃》 ​​​​</p>
+            </div>
+            <div class="col-md-4">
+              <img src="imgs/dl_about.jpg" class="img-responsive img-rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="dl_product">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#dl_product_1" aria-controls="dl_product_1" role="tab" data-toggle="tab">在线大学</a></li>
+        <li role="presentation"><a href="#dl_product_2" aria-controls="dl_product_2" role="tab" data-toggle="tab">会员专享</a></li>
+        <li role="presentation"><a href="#dl_product_3" aria-controls="dl_product_3" role="tab" data-toggle="tab">优质视频</a></li>
+        <li role="presentation" class="pull-right hidden-sm hidden-xs"><a href="#dl_product_4" aria-controls="dl_product_4" role="tab" data-toggle="tab">更多</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="dl_product_1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="media_left">
+                  <img src="imgs/erweima.png">
+                </div>
+                <div class="media_right">
+                  <h4>更多资讯</h4>
+                  <h4>欢迎关注</h4>
+                </div>
+                <ol class="breadcrumb">
+                  <li>Java</li>
+                  <li>C++</li>
+                  <li>C</li>
+                  <li>Javascritp</li>
+                  <li>Python</li>
+                </ol>
+                <div class="zixun">
+                  <button class="btn btn-default">欢迎咨询</button>
+                  <button class="btn btn-default">查询更多</button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <img src="imgs/dl_online.jpg" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="dl_product_2">...</div>
+        <div role="tabpanel" class="tab-pane" id="dl_product_3">...</div>
+      </div>
+    </section>
     <section id="dl_hot">热门课程</section>
     <section id="dl_link">友情链接</section>
     <footer id="dl_footer"></footer>
@@ -123,5 +188,6 @@
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

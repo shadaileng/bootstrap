@@ -61,6 +61,68 @@
   border-bottom: 2px solid #54c8f1;
   background-color: transparent;
 }
+#dl_header .dl_navbar {
+  margin-bottom: 0px;
+}
 #dl_header .dl_navbar .navbar-toggle{
   margin-top: 15px;
+}
+
+/**************轮播图******************/
+
+#dl_carousel  .carousel-inner .item {
+  /*height: 473px;*/
+  background: #0007 no-repeat center center;
+  background-size: 1000%;
+}
+#dl_carousel  .carousel-inner .item img {
+  margin: 0 auto;
+}
+
+/***************关于我们*******************/
+
+#dl_about .title_star .span_sm, #dl_about .title_star .span_md {
+  color: #f3ee86cf;
+  margin: 5px;
+  font-size: 2em;
+}
+
+#dl_about .title_star .span_md {
+  font-size: 3em;
+}
+
+#dl_about .container .dl_about_desc {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+/***********产品特色***********/
+#dl_product .nav a {
+  color: #999;
+}
+#dl_product .nav li.active {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #0AB4F7;
+}
+
+#dl_product_1 .media_left,
+#dl_product_1 .media_right {
+  display: inline-block;
+}
+
+#dl_product_1 .media_left img{
+  width: 200px;
+}
+#dl_product_1 ol {
+  background-color: #fff;
+  font-size: 2em;
+}
+#dl_product_1 .zixun {
+/*  display: flex;
+  flex-direction: column;*/
+}
+
+#dl_product_1 .zixun button {
+  margin: 0 15px;
 }
