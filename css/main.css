@@ -20,6 +20,21 @@
   content: '\e942';
   font-size: 13px;
 }
+
+#dl_about .title_star .span_sm, #dl_about .title_star .span_md,
+#dl_hot .title_star .span_sm, #dl_hot .title_star .span_md,
+#dl_link .title_star .span_sm, #dl_link .title_star .span_md {
+  color: #f3ee86cf;
+  margin: 5px;
+  font-size: 2em;
+}
+
+#dl_about .title_star .span_md,
+#dl_hot .title_star .span_md,
+#dl_link .title_star .span_md {
+  font-size: 3em;
+}
+
 /**********头部样式************/
 #dl_header {}
 #dl_header .top_bar {
@@ -81,16 +96,6 @@
 
 /***************关于我们*******************/
 
-#dl_about .title_star .span_sm, #dl_about .title_star .span_md {
-  color: #f3ee86cf;
-  margin: 5px;
-  font-size: 2em;
-}
-
-#dl_about .title_star .span_md {
-  font-size: 3em;
-}
-
 #dl_about .container .dl_about_desc {
   line-height: 30px;
   font-size: 18px;
@@ -105,14 +110,16 @@
   background-color: transparent;
   border-bottom: 2px solid #0AB4F7;
 }
-
-#dl_product_1 .media_left,
-#dl_product_1 .media_right {
-  display: inline-block;
+#dl_product .tab-content {
+  margin-top: 15px;
+  height: 400px;
+  color: #999;
 }
-
-#dl_product_1 .media_left img{
-  width: 200px;
+#dl_product_1 .dl_pd_desc {
+  margin-top: 30px;
+}
+#dl_product_1 .media .media-body {
+  vertical-align: bottom;
 }
 #dl_product_1 ol {
   background-color: #fff;
@@ -125,4 +132,69 @@
 
 #dl_product_1 .zixun button {
   margin: 0 15px;
+}
+
+/************热门课程*****************/
+
+#dl_hot .media .media-left {
+  width: 25%;
+}
+#dl_hot .media .media-body {
+  width: 60%;
+}
+
+#dl_hot .media .media-right {
+  width: 15%;
+}
+#dl_hot .media .media-body,
+#dl_hot .media .media-right {
+  vertical-align: middle;
+}
+
+#dl_hot .media .media-left img {
+  width: 100px;
+  height: 100px;
+}
+
+/****************友情链接**************/
+
+#dl_link ul {
+  list-style: none;
+}
+
+#dl_link ul li {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+/******************尾部*******************/
+
+#dl_footer {
+  height: 200px;
+  background-image: url('../imgs/ziran2.jpg');
+  background-size: 400%;
+}
+#dl_footer .row>div + div {
+  border-left: 1px solid #8d8;
+}
+
+#dl_footer .container .row div {
+  color: #fff;
+  height: 200px;
+  padding: 40px 20px;
+}
+
+#dl_footer .container .row ul {
+  list-style: none;
+}
+#dl_footer .container .row ul li {
+  line-height: 40px;
+}
+#dl_footer .dl_left, #dl_footer .dl_middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

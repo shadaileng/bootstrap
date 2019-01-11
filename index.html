@@ -32,7 +32,7 @@
                 <i class="dl_icon-phone"></i>
                 <span>关注微信</span>
                 <i class="glyphicon glyphicon-triangle-bottom"></i>
-                <img src="imgs/erweima.png" alt="二维码">
+                <img src="imgs/erweima.png" alt="二维码" style="z-index: 9999">
               </a>
             </div>
             <div class="top_bar_2 col-md-5">
@@ -47,7 +47,7 @@
             </div>
             <div class="top_bar_4 col-md-3">
               <a href="" class="btn btn-default btn-sm" role="button">免费注册</a>
-              <a href="" role="button">立即登陆</a>
+              <a href="javascript:;" role="button" data-toggle="modal" data-target="#dl_login">立即登陆</a>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
       <nav class="navbar navbar-default navbar-static-top dl_navbar">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dl_navbar_nav" aria-expanded="false">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -63,17 +63,14 @@
             </button>
             <a class="navbar-brand" href="#">Shadaileng</a>
           </div>
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="collapse navbar-collapse" id="dl_navbar_nav">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">关于我们</a></li>
-              <li><a href="#">课程介绍</a></li>
-              <li><a href="#">热门课程</a></li>
-              <li><a href="#">名师讲授</a></li>
-              <li><a href="#">课堂互动</a></li>
-              <li><a href="#">联系我们</a></li>
+              <li class="active"><a href="#dl_about_">关于我们</a></li>
+              <li><a href="#dl_hot_">热门课程</a></li>
+              <li><a href="#dl_link_">友情链接</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">个人中心</a></li>
+              <li><a href="">个人中心</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -138,52 +135,254 @@
       </div>
     </section>
     <section id="dl_product">
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#dl_product_1" aria-controls="dl_product_1" role="tab" data-toggle="tab">在线大学</a></li>
-        <li role="presentation"><a href="#dl_product_2" aria-controls="dl_product_2" role="tab" data-toggle="tab">会员专享</a></li>
-        <li role="presentation"><a href="#dl_product_3" aria-controls="dl_product_3" role="tab" data-toggle="tab">优质视频</a></li>
-        <li role="presentation" class="pull-right hidden-sm hidden-xs"><a href="#dl_product_4" aria-controls="dl_product_4" role="tab" data-toggle="tab">更多</a></li>
-      </ul>
+      <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#dl_product_1" aria-controls="dl_product_1" role="tab" data-toggle="tab">在线大学</a></li>
+          <li role="presentation"><a href="#dl_product_2" aria-controls="dl_product_2" role="tab" data-toggle="tab">会员专享</a></li>
+          <li role="presentation"><a href="#dl_product_3" aria-controls="dl_product_3" role="tab" data-toggle="tab">优质视频</a></li>
+          <li role="presentation" class="pull-right hidden-sm hidden-xs"><a href="#dl_product_4" aria-controls="dl_product_4" role="tab" data-toggle="tab">更多</a></li>
+        </ul>
 
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="dl_product_1">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8">
-                <div class="media_left">
-                  <img src="imgs/erweima.png">
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="dl_product_1">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 dl_pd_desc">
+                  <div class="media">
+                    <div class="media-left">
+                      <img class="media-object" src="imgs/erweima.png" width="100">
+                    </div>
+                    <div class="media-body">
+                      <h5>更多资讯</h5>
+                      <h5>欢迎关注</h5>
+                    </div>
+                  </div>
+                  <ol class="breadcrumb">
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>C</li>
+                    <li>Javascritp</li>
+                    <li>Python</li>
+                  </ol>
+                  <div class="zixun">
+                    <button class="btn btn-default">欢迎咨询</button>
+                    <button class="btn btn-default">查询更多</button>
+                  </div>
                 </div>
-                <div class="media_right">
-                  <h4>更多资讯</h4>
-                  <h4>欢迎关注</h4>
-                </div>
-                <ol class="breadcrumb">
-                  <li>Java</li>
-                  <li>C++</li>
-                  <li>C</li>
-                  <li>Javascritp</li>
-                  <li>Python</li>
-                </ol>
-                <div class="zixun">
-                  <button class="btn btn-default">欢迎咨询</button>
-                  <button class="btn btn-default">查询更多</button>
+                <div class="col-md-4">
+                  <img src="imgs/dl_online.jpg" class="img-responsive hidden-xs hidden-sm">
                 </div>
               </div>
-              <div class="col-md-4">
-                <img src="imgs/dl_online.jpg" class="img-responsive">
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="dl_product_2">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="imgs/hyzx.jpg" class="img-responsive hidden-xs hidden-sm">
+                </div>
+                <div class="col-md-8 dl_pd_desc">
+                  <h3 class="text-warning">网站会员 特权专享</h3>
+                  <p>多样纸片人 特色服务 专供选择 不满意无条件拒绝</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="dl_product_3">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="imgs/yzsp.png" class="img-responsive hidden-xs hidden-sm">
+                </div>
+                <div class="col-md-8 dl_pd_desc">
+                  <h1 class="text-danger">激情视频 在线观看</h1>
+                  <h3>多种类型 任君选择</h3>
+                  <p>即刻点播 无缝链接 观看免费 会员高清</p>
+                  <p class="badge">超过3000+视频，百万图片，欢迎订阅</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div role="tabpanel" class="tab-pane" id="dl_product_2">...</div>
-        <div role="tabpanel" class="tab-pane" id="dl_product_3">...</div>
       </div>
     </section>
-    <section id="dl_hot">热门课程</section>
-    <section id="dl_link">友情链接</section>
-    <footer id="dl_footer"></footer>
+    <section id="dl_hot">
+      <h1 class="text-center">热门课程</h1>
+      <div class="text-center title_star">
+        <span class="glyphicon glyphicon-star span_sm"></span>
+        <span class="glyphicon glyphicon-star span_md"></span>
+        <span class="glyphicon glyphicon-star span_sm"></span>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <img src="imgs/hot1.jpg" class="media-object img-responsive img-circle img-thumbnail" width="100">
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">【热】 黑猫 </h3>
+                <h5 class="text-muted">动漫作品《我的妹妹哪有这么可爱！》中人物。网络昵称“黑猫”，身为人类时的名字是“五更琉璃”。五更家的长女，是有着漂亮黑长发、皮肤白皙的和风美人，平时一身哥特萝莉装打扮。</h5>
+              </div>
+              <div class="media-right">
+                <h5>花泽香菜</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <img src="imgs/hot2.png" class="media-object img-responsive img-circle img-thumbnail" width="100">
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">【热】 和泉纱雾 </h3>
+                <h5 class="text-muted">动漫作品《情色漫画老师》中女主角。跟学生作家和泉正宗没有血缘关系的妹妹，同时也是负责他作品插画的“情色漫画老师”。重度家里蹲，只要有其他人出现在家中，就绝对不会走出房间。跟第一眼给人的印象不同，她是个把感情全部都写在脸上的女孩。</h5>
+              </div>
+              <div class="media-right">
+                <h5>藤田茜</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <img src="imgs/hot3.jpg" class="media-object img-responsive img-circle img-thumbnail" width="100">
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">【热】 未知女孩 </h3>
+                <h5 class="text-muted">这是谁，我不知道。这是谁，我不知道。这是谁，我不知道。这是谁，我不知道。</h5>
+              </div>
+              <div class="media-right">
+                <h5> -- </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <img src="imgs/hot4.jpg" class="media-object img-responsive img-circle img-thumbnail" width="100">
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">【热】 第六十一驱逐队 </h3>
+                <h5 class="text-muted">这是谁，我不知道。这是谁，我不知道。这是谁，我不知道。这是谁，我不知道。</h5>
+              </div>
+              <div class="media-right">
+                <h5> -- </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <img src="imgs/hot5.png" class="media-object img-responsive img-circle img-thumbnail" width="100">
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">【热】 未知女孩 </h3>
+                <h5 class="text-muted">这是谁，我不知道。这是谁，我不知道。这是谁，我不知道。这是谁，我不知道。</h5>
+              </div>
+              <div class="media-right">
+                <h5> -- </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="media">
+              <div class="media-left">
+                <img src="imgs/hot6.jpg" class="media-object img-responsive img-circle img-thumbnail" width="100">
+              </div>
+              <div class="media-body">
+                <h3 class="media-heading">【热】 未知女孩 </h3>
+                <h5 class="text-muted">这是谁，我不知道。这是谁，我不知道。这是谁，我不知道。这是谁，我不知道。</h5>
+              </div>
+              <div class="media-right">
+                <h5> -- </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="dl_link">
+      <h1 class="text-center">友情链接</h1>
+      <div class="text-center title_star">
+        <span class="glyphicon glyphicon-star span_sm"></span>
+        <span class="glyphicon glyphicon-star span_md"></span>
+        <span class="glyphicon glyphicon-star span_sm"></span>
+      </div>
+      <ul class="text-center">
+        <li><img src="imgs/logo_bootstrap.jpg" class="img-responsive img-circle img-thumbnail"></li>
+        <li><img src="imgs/logo_baidu.gif" class="img-responsive img-circle img-thumbnail"></li>
+        <li><img src="imgs/logo_w3c.png" class="img-responsive img-circle img-thumbnail"></li>
+        <li><img src="imgs/logo_google.png" class="img-responsive img-circle img-thumbnail"></li>
+      </ul>
+    </section>
+    <footer id="dl_footer">
+      <div class="container hidden-xs hidden-sm">
+        <div class="row">
+          <div class="col-md-3 col-md-offset-1 dl_left">
+            <div class="row">
+              <ul class="col-md-6">
+                <li>关于我们</li>
+                <li>联系我们</li>
+                <li>热门课程</li>
+              </ul>
+              <ul class="col-md-6">
+                <li>名师授课</li>
+                <li>课堂互动</li>
+                <li>课程介绍</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 dl_middle">
+            <h5>公司地址：广州xx区xx路xx号</h5>
+            <h5>联系电话：18888888668</h5>
+            <h5>电子邮箱：18888888668@qq.com</h5>
+          </div>
+          <div class="col-md-3 dl_right">
+            <h5>联系我们</h5>
+            <img src="imgs/weixin.png" width="60" data-toggle="tooltip" data-placement="bottom" title="我的微信">
+            <img src="imgs/weibo.png" width="60" data-toggle="tooltip" data-placement="bottom" title="我的微博">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="dl_login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Login</h4>
+          </div>
+          <div class="modal-body text-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-2">
+                  手机号码：
+                </div>
+                <div class="col-md-4">
+                  <input type="text" name="name" placeholder="输入手机号码">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2">
+                  密 码 ：
+                </div>
+                <div class="col-md-4">
+                  <input type="password" name="passwd" placeholder="输入密码">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
