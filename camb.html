@@ -1,0 +1,71 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo</title>
+    <style>
+      #a {
+        position: absolute;
+//        left: 100px;
+      }
+      #b {
+        position: absolute;
+        left: 300px;
+      }
+      .Comb {
+        margin: 100px 100px;
+        width: 240px;
+        height: 276px;
+      }
+      
+      .Comb div {
+        position: absolute;
+        top: 27.5%;
+        width: 240px;
+        height: 137px;
+        background-color: #fff8;
+//        outline: 1px solid #00c;
+        overflow: hidden;
+        border-left: 1px solid #00c;
+        border-right: 1px solid #00c;
+      }
+      
+      .Comb div img {
+        width: 100%;
+        height: 201.71%;
+        position: absolute;
+        top: -50%;
+      }
+      .Comb .first {
+        
+      }
+      .Comb .second {
+        transform: rotate(60deg);
+      }
+      
+      .Comb .second img {
+        transform: rotate(-60deg);
+      }
+      .Comb .third {
+        transform: rotate(-60deg);
+      }
+      .Comb .third img {
+        transform: rotate(60deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="a" class="Comb">
+      <div class="first"><img src="./res/girl.jpg"/></div>
+      <div class="second"><img src="./res/girl.jpg"/></div>
+      <div class="third"><img src="./res/girl.jpg"/></div>
+    </div>
+    <div id="b" class="Comb">
+      <div class="first"><img src="./res/girl.jpg"/></div>
+      <div class="second"><img src="./res/girl.jpg"/></div>
+      <div class="third"><img src="./res/girl.jpg"/></div>
+    </div>
+  </body>
+</html>
